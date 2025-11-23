@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Food Munch - Fresh, Healthy, Organic, and Delicious Food Delivered Fast." />
+  <title>Food Munch</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous"
+  >
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/d1c2ea8b80.js" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts (Optional for better typography) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ <!-- Navbar -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img 
+        src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/food-munch-img.png" 
+        class="food-munch-logo" 
+        alt="Food Munch Logo"
+      />
+    </a>
+
+    <!-- Toggle Button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  <div class="navbar-nav ms-auto align-items-center">
+    <a class="nav-link nav-chip text-black fw-semibold" id="navItem1" href="#wcuSection">Why Choose Us?</a>
+    <a class="nav-link nav-chip text-black fw-semibold" id="navItem2" href="#exploreMenu">Explore Menu</a>
+    <a class="nav-link nav-chip text-black fw-semibold" id="navItem3" href="#deliveryPaymentSection">Delivery & Payment</a>
+    <a class="nav-link nav-chip text-black fw-semibold" id="navItem4" href="#followUsSection">Follow Us</a>
+    <!-- Cart Icon with Counter -->
+    <a class="nav-link nav-chip position-relative text-black fw-semibold" href="#">
+      <i class="fa-solid fa-cart-shopping fa-lg"></i>
+      <span 
+        id="cart-count" 
+        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+        style="font-size: 0.65rem;"
+      >
+        0
+      </span>
+    </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Banner Section -->
+<div class="banner-section-bg-container d-flex justify-content-center flex-column position-relative">
+  <video autoplay muted loop playsinline class="background-video w-100">
+    <source src="bg.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="banner-content text-center position-absolute top-50 start-50 translate-middle text-white">
+    <h1 class="banner-heading mb-3">Get Delicious Food Anytime</h1>
+    <p class="banner-caption mb-4">Eat Smart & Healthy</p>
+
+    <!-- Smooth scroll buttons -->
+    <button
+      class="btn btn-outline-light me-2"
+      type="button"
+      onclick="document.getElementById('exploreMenu').scrollIntoView({ behavior: 'smooth' });"
+    >
+      View Menu
+    </button>
+
+    <button
+      class="btn btn-outline-light"
+      type="button"
+      onclick="document.getElementById('deliveryPaymentSection').scrollIntoView({ behavior: 'smooth' });"
+    >
+      Order Now
+    </button>
+  </div>
+</div>
+
+
+
+ <!-- Why Choose Us Section -->
+  <div class="wcu-section pt-5 pb-5" id="wcuSection" style="background-color: brown;">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Side: Cards -->
+        <div class="col-12 col-lg-7">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="wcu-section-heading text-white">Why Choose Us?</h1>
+              <p class="wcu-section-description text-light">
+                We use both original recipes and classic versions of famous food items.
+              </p>
+            </div>
+
+            <div class="col-12 col-md-6 mb-4">
+              <div class="wcu-card p-3 h-100 bg-white rounded shadow-sm">
+                <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/food-serve.png" class="wcu-card-image mb-3" />
+                <h4 class="wcu-card-title">Food Service</h4>
+                <p class="wcu-card-description">
+                  Experience fine dining at the comfort of your home. All our orders are carefully packed.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-4">
+              <div class="wcu-card p-3 h-100 bg-white rounded shadow-sm">
+                <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/fruits-img.png" class="wcu-card-image mb-3" />
+                <h4 class="wcu-card-title">Fresh Food</h4>
+                <p class="wcu-card-description">
+                  Fresh-cut fruits and vegetables directly picked from partner farms.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 mb-4">
+              <div class="wcu-card p-3 h-100 bg-white rounded shadow-sm">
+                <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/offers-img.png" class="wcu-card-image mb-3" />
+                <h4 class="wcu-card-title">Best Offers</h4>
+                <p class="wcu-card-description">
+                  Food Coupons & Offers up to <span class="text-danger fw-bold">50% OFF</span> and exclusive promo codes on online orders.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Video -->
+        <div class="col-12 col-lg-5 text-center mt-3 mt-lg-0">
+          <video src="abtvedio.mp4" class="w-100 rounded shadow-lg" autoplay muted loop playsinline style="max-height:700px; object-fit:cover;"></video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- ===== Explore Menu Section ===== -->
+<section id="exploreMenu" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h1 class="fw-bold">Explore Menu</h1>
+      <p class="text-muted">Delicious dishes made with love and fresh ingredients.</p>
+    </div>
+
+    <div class="row">
+      <!-- Non-Veg Starters -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="shadow menu-item-card p-3 h-100">
+          <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png"
+               class="menu-item-image w-100" alt="Non-Veg Starters" />
+          <h2 class="menu-card-title mt-2">Non-Veg Starters</h2>
+          <a href="#" class="menu-item-link" data-bs-toggle="modal" data-bs-target="#nonVegModal">View All</a>
+        </div>
+      </div>
+
+      <!-- Veg Starters -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="shadow menu-item-card p-3 h-100">
+          <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/em-veg-starters-img.png"
+               class="menu-item-image w-100" alt="Veg Starters" />
+          <h2 class="menu-card-title mt-2">Veg Starters</h2>
+          <a href="#" class="menu-item-link" data-bs-toggle="modal" data-bs-target="#vegModal">View All</a>
+        </div>
+      </div>
+
+      <!-- Soups -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="shadow menu-item-card p-3 h-100">
+          <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/em-soup-img.png"
+               class="menu-item-image w-100" alt="Soups" />
+          <h2 class="menu-card-title mt-2">Soups</h2>
+          <a href="#" class="menu-item-link" data-bs-toggle="modal" data-bs-target="#soupsModal">View All</a>
+        </div>
+      </div>
+
+      <!-- Fish & Seafood -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="shadow menu-item-card p-3 h-100">
+          <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/em-grilled-seafood-img.png"
+               class="menu-item-image w-100" alt="Fish & Seafood" />
+          <h2 class="menu-card-title mt-2">Fish & Seafood</h2>
+          <a href="#" class="menu-item-link" data-bs-toggle="modal" data-bs-target="#seafoodModal">View All</a>
+        </div>
+      </div>
+
+      <!-- Main Course -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="shadow menu-item-card p-3 h-100">
+          <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/em-hyderabadi-biryani-img.png"
+               class="menu-item-image w-100" alt="Main Course" />
+          <h2 class="menu-card-title mt-2">Main Course</h2>
+          <a href="#" class="menu-item-link" data-bs-toggle="modal" data-bs-target="#mainCourseModal">View All</a>
+        </div>
+      </div>
+
+      <!-- Noodles -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="shadow menu-item-card p-3 h-100">
+          <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/em-mushroom-noodles-img.png"
+               class="menu-item-image w-100" alt="Noodles" />
+          <h2 class="menu-card-title mt-2">Noodles</h2>
+          <a href="#" class="menu-item-link" data-bs-toggle="modal" data-bs-target="#noodlesModal">View All</a>
+        </div>
+      </div>
+
+      <!-- Salads -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="shadow menu-item-card p-3 h-100">
+          <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/em-gluten-img.png"
+               class="menu-item-image w-100" alt="Salads" />
+          <h2 class="menu-card-title mt-2">Salads</h2>
+          <a href="#" class="menu-item-link" data-bs-toggle="modal" data-bs-target="#saladsModal">View All</a>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="shadow menu-item-card p-3 h-100">
+          <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/em-coffee-bourbon-img.png"
+               class="menu-item-image w-100" alt="Desserts" />
+          <h2 class="menu-card-title mt-2">Desserts</h2>
+          <a href="#" class="menu-item-link" data-bs-toggle="modal" data-bs-target="#dessertsModal">View All</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MODALS ================= -->
+
+<!-- Non-Veg Starters Modal -->
+<div class="modal fade" id="nonVegModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <h5 class="modal-title">Non-Veg Starters</h5>
+        <button type="button" class="close-btn" data-bs-dismiss="modal">×</button>
+      </div>
+      <div class="modal-body ">
+        <div class="row g-4 ">
+          <div class="col-md-4 food-item" data-id="chicken65" data-name="Chicken 65" data-price="250">
+            <img src="chiken65.jpeg" alt="Chicken 65">
+            <p>Chicken 65</p>
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(this, -1)">−</button>
+              <span class="quantity">0</span>
+              <button onclick="changeQuantity(this, 1)">+</button>
+            </div>
+          </div>
+          <div class="col-md-4 food-item" data-id="tandooriChicken" data-name="Tandoori Chicken" data-price="300">
+            <img src="TandooriChicken.jpeg" alt="Tandoori Chicken">
+            <p>Tandoori Chicken</p>
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(this, -1)">−</button>
+              <span class="quantity">0</span>
+              <button onclick="changeQuantity(this, 1)">+</button>
+            </div>
+          </div>
+          <div class="col-md-4 food-item" data-id="chilliChicken" data-name="Chilli Chicken" data-price="280">
+            <img src="Chillichicken.jpeg" alt="Chilli Chicken">
+            <p>Chilli Chicken</p>
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(this, -1)">−</button>
+              <span class="quantity">0</span>
+              <button onclick="changeQuantity(this, 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Veg Starters Modal -->
+<div class="modal fade" id="vegModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Veg Starters</h5>
+        <button type="button" class="close-btn" data-bs-dismiss="modal">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-4">
+          <div class="col-md-4 food-item" data-id="paneerTikka" data-name="Paneer Tikka" data-price="220">
+            <img src="paneer-tikka.jpeg" alt="Paneer Tikka">
+            <p>Paneer Tikka</p>
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(this, -1)">−</button>
+              <span class="quantity">0</span>
+              <button onclick="changeQuantity(this, 1)">+</button>
+            </div>
+          </div>
+          <div class="col-md-4 food-item" data-id="gobiManchurian" data-name="Gobi Manchurian" data-price="180">
+            <img src="gobi-manchurian.jpeg" alt="Gobi Manchurian">
+            <p>Gobi Manchurian</p>
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(this, -1)">−</button>
+              <span class="quantity">0</span>
+              <button onclick="changeQuantity(this, 1)">+</button>
+            </div>
+          </div>
+          <div class="col-md-4 food-item" data-id="vegSpringRolls" data-name="Veg Spring Rolls" data-price="160">
+            <img src="spring-rolls.jpeg" alt="Veg Spring Rolls">
+            <p>Veg Spring Rolls</p>
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(this, -1)">−</button>
+              <span class="quantity">0</span>
+              <button onclick="changeQuantity(this, 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Soups Modal -->
+<div class="modal fade" id="soupsModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Soups</h5>
+        <button type="button" class="close-btn" data-bs-dismiss="modal">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-4">
+          <div class="col-md-4 food-item" data-id="tomatoSoup" data-name="Tomato Soup" data-price="120">
+            <img src="tomato-soup.jpeg" alt="Tomato Soup">
+            <p>Tomato Soup</p>
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(this, -1)">−</button>
+              <span class="quantity">0</span>
+              <button onclick="changeQuantity(this, 1)">+</button>
+            </div>
+          </div>
+          <div class="col-md-4 food-item" data-id="sweetCornSoup" data-name="Sweet Corn Soup" data-price="130">
+            <img src="corn-soup.jpeg" alt="Sweet Corn Soup">
+            <p>Sweet Corn Soup</p>
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(this, -1)">−</button>
+              <span class="quantity">0</span>
+              <button onclick="changeQuantity(this, 1)">+</button>
+            </div>
+          </div>
+          <div class="col-md-4 food-item" data-id="hotAndSourSoup" data-name="Hot & Sour Soup" data-price="140">
+            <img src="Hot And Sour Soup.jpeg" alt="Hot & Sour Soup">
+            <p>Hot & Sour Soup</p>
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(this, -1)">−</button>
+              <span class="quantity">0</span>
+              <button onclick="changeQuantity(this, 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fish & Seafood Modal -->
+<div class="modal fade" id="seafoodModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Fish & Seafood</h5>
+        <button type="button" class="close-btn" data-bs-dismiss="modal">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-4">
+          <div class="col-md-4 food-item" data-id="grilledPrawns" data-name="Grilled Prawns" data-price="350">
+            <img src="grilled-prawns.jpeg" alt="Grilled Prawns">
+            <p>Grilled Prawns</p>
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(this, -1)">−</button>
+              <span class="quantity">0</span>
+              <button onclick="changeQuantity(this, 1)">+</button>
+            </div>
+          </div>
+          <div class="col-md-4 food-item" data-id="friedFish" data-name="Fried Fish" data-price="300">
+            <img src="fish-fry.jpeg" alt="Fried Fish">
+            <p>Fried Fish</p>
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(this, -1)">−</button>
+              <span class="quantity">0</span>
+              <button onclick="changeQuantity(this, 1)">+</button>
+            </div>
+          </div>
+          <div class="col-md-4 food-item" data-id="fishCurry" data-name="Fish Curry" data-price="320">
+            <img src="fish-curry.jpeg" alt="Fish Curry">
+            <p>Fish Curry</p>
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(this, -1)">−</button>
+              <span class="quantity">0</span>
+              <button onclick="changeQuantity(this, 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Main Course Modal -->
+<div class="modal fade" id="mainCourseModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Main Course</h5>
+        <button type="button" class="close-btn" data-bs-dismiss="modal">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-4">
+          <div class="col-md-4 food-item" data-id="hyderabadiBiryani" data-name="Hyderabadi Biryani" data-price="280">
+            <img src="biryani.jpeg" alt="Hyderabadi Biryani">
+            <p>Hyderabadi Biryani</p>
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(this, -1)">−</button>
+              <span class="quantity">0</span>
+              <button onclick="changeQuantity(this, 1)">+</button>
+            </div>
+          </div>
+          <div class="col-md-4 food-item" data-id="butterChicken" data-name="Butter Chicken" data-price="300">
+            <img src="butter-chicken.jpeg" alt="Butter Chicken">
+            <p>Butter Chicken</p>
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(this, -1)">−</button>
+              <span class="quantity">0</span>
+              <button onclick="changeQuantity(this, 1)">+</button>
+            </div>
+          </div>
+          <div class="col-md-4 food-item" data-id="paneerButterMasala" data-name="Paneer Butter Masala" data-price="220">
+            <img src="paneer-butter-masala.jpeg" alt="Paneer Butter Masala">
+            <p>Paneer Butter Masala</p>
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(this, -1)">−</button>
+              <span class="quantity">0</span>
+              <button onclick="changeQuantity(this, 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Noodles Modal -->
+<div class="modal fade" id="noodlesModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Noodles</h5>
+        <button type="button" class="close-btn" data-bs-dismiss="modal">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-4">
+          <div class="col-md-4 food-item" data-id="chowMein" data-name="Chow Mein" data-price="180">
+            <img src="chow-mein.jpeg" alt="Chow Mein">
+            <p>Chow Mein</p>
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(this, -1)">−</button>
+              <span class="quantity">0</span>
+              <button onclick="changeQuantity(this, 1)">+</button>
+            </div>
+          </div>
+          <div class="col-md-4 food-item" data-id="hakkaNoodles" data-name="Hakka Noodles" data-price="170">
+            <img src="hakka-noodles.jpeg" alt="Hakka Noodles">
+            <p>Hakka Noodles</p>
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(this, -1)">−</button>
+              <span class="quantity">0</span>
+              <button onclick="changeQuantity(this, 1)">+</button>
+            </div>
+          </div>
+          <div class="col-md-4 food-item" data-id="schezwanNoodles" data-name="Schezwan Noodles" data-price="190">
+            <img src="schezwan-noodles.jpeg" alt="Schezwan Noodles">
+            <p>Schezwan Noodles</p>
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(this, -1)">−</button>
+              <span class="quantity">0</span>
+              <button onclick="changeQuantity(this, 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Salads Modal -->
+<div class="modal fade" id="saladsModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Salads</h5>
+        <button type="button" class="close-btn" data-bs-dismiss="modal">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-4">
+          <div class="col-md-4 food-item" data-id="caesarSalad" data-name="Caesar Salad" data-price="120">
+            <img src="caesar-salad.jpeg" alt="Caesar Salad">
+            <p>Caesar Salad</p>
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(this, -1)">−</button>
+              <span class="quantity">0</span>
+              <button onclick="changeQuantity(this, 1)">+</button>
+            </div>
+          </div>
+          <div class="col-md-4 food-item" data-id="greekSalad" data-name="Greek Salad" data-price="130">
+            <img src="greek-salad.jpeg" alt="Greek Salad">
+            <p>Greek Salad</p>
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(this, -1)">−</button>
+              <span class="quantity">0</span>
+              <button onclick="changeQuantity(this, 1)">+</button>
+            </div>
+          </div>
+          <div class="col-md-4 food-item" data-id="fruitSalad" data-name="Fruit Salad" data-price="110">
+            <img src="fruit-salad.jpeg" alt="Fruit Salad">
+            <p>Fruit Salad</p>
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(this, -1)">−</button>
+              <span class="quantity">0</span>
+              <button onclick="changeQuantity(this, 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Desserts Modal -->
+<div class="modal fade" id="dessertsModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Desserts</h5>
+        <button type="button" class="close-btn" data-bs-dismiss="modal">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-4">
+          <div class="col-md-4 food-item" data-id="chocolateBrownie" data-name="Chocolate Brownie" data-price="150">
+            <img src="brownie.jpeg" alt="Chocolate Brownie">
+            <p>Chocolate Brownie</p>
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(this, -1)">−</button>
+              <span class="quantity">0</span>
+              <button onclick="changeQuantity(this, 1)">+</button>
+            </div>
+          </div>
+          <div class="col-md-4 food-item" data-id="cheesecake" data-name="Cheesecake" data-price="140">
+            <img src="cheesecake.jpeg" alt="Cheesecake">
+            <p>Cheesecake</p>
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(this, -1)">−</button>
+              <span class="quantity">0</span>
+              <button onclick="changeQuantity(this, 1)">+</button>
+            </div>
+          </div>
+          <div class="col-md-4 food-item" data-id="iceCream" data-name="Ice Cream" data-price="120">
+            <img src="ice-cream.jpeg" alt="Ice Cream">
+            <p>Ice Cream</p>
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(this, -1)">−</button>
+              <span class="quantity">0</span>
+              <button onclick="changeQuantity(this, 1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ===================== MODALS END ===================== -->
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Healthy Food Section with Background Image -->
+<div class="healthy-food-section pt-5 pb-5" style="background: url('freshbg.jpeg') center/cover no-repeat; position: relative;">
+  <!-- Optional overlay for better text readability -->
+  <div style="position: absolute; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.4);"></div>
+  
+  <div class="container position-relative" style="z-index: 2;">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-5 text-start">
+        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/healthy-food-plate-img.png" class="img-fluid rounded" alt="Healthy Food" />
+      </div>
+      <div class="col-12 col-md-7 text-white">
+        <h1 class="healthy-food-section-heading   text-white">Fresh, Healthy, Organic, Delicious Fruits</h1>
+        <p class="healthy-food-section-description  text-white">
+          Say no to harmful chemicals and go fully organic with our fresh fruits and veggies.
+        </p>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#videoModal">Watch Video</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark">
+      <div class="modal-header border-0">
+        <h5 class="modal-title text-white" id="videoModalLabel">Watch Our Story</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <video controls autoplay muted loop class="w-100">
+          <source src="RestaurantCrete.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<section class="meet-chef-section py-5 bg-gradient" id="meetChef">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4 chef-title-anim">Meet Our Chefs</h2>
+    <div class="row justify-content-center g-4">
+
+      <!-- Chef 1 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="chef-card mx-auto">
+          <div class="chef-card-inner">
+            <!-- Front -->
+            <div class="chef-card-front">
+              <img src="chef-anika.jpeg" alt="Chef Anika Sharma" class="img-fluid rounded-circle shadow-lg" />
+              <h4 class="mt-3">Chef Anika Sharma</h4>
+            </div>
+            <!-- Back -->
+            <div class="chef-card-back">
+              <h5>Signature Dish: Saffron Mango Curry</h5>
+              <p>15+ years of modern Indian cuisine experience; known for blending tradition and creativity.</p>
+              <ul class="list-unstyled chef-details-list">
+                <li><strong>Specialty:</strong> Fusion & Traditional Indian</li>
+                <li><strong>Fun Fact:</strong> Loves jazz in the kitchen</li>
+                <li><strong>Award:</strong> Curry Innovator 2023</li>
+              </ul>
+              <a href="#exploreMenu" class="btn btn-outline-dark btn-sm mt-2">Ask Chef Anika</a>
+              <div class="chef-socials mt-3">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chef 2 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="chef-card mx-auto">
+          <div class="chef-card-inner">
+            <div class="chef-card-front">
+              <img src="chef-rajesh.jpeg" alt="Chef Rajesh Kumar" class="img-fluid rounded-circle shadow-lg" />
+              <h4 class="mt-3">Chef Rajesh Kumar</h4>
+            </div>
+            <div class="chef-card-back">
+              <h5>Signature Dish: Tandoori Salmon</h5>
+              <p>20 years’ kitchen leadership; infuses global flavors in classic Indian dishes.</p>
+              <ul class="list-unstyled chef-details-list">
+                <li><strong>Specialty:</strong> Tandoor & Seafood</li>
+                <li><strong>Fun Fact:</strong> Marathon runner & food sculptor</li>
+                <li><strong>Award:</strong> Top Seafood Chef 2022</li>
+              </ul>
+              <a href="#exploreMenu" class="btn btn-outline-dark btn-sm mt-2">Ask Chef Rajesh</a>
+              <div class="chef-socials mt-3">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Chef 3 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="chef-card mx-auto">
+          <div class="chef-card-inner">
+            <div class="chef-card-front">
+              <img src="chef-alisha.jpeg" alt="Chef Alisha Pinto" class="img-fluid rounded-circle shadow-lg" />
+              <h4 class="mt-3">Chef Alisha Pinto</h4>
+            </div>
+            <div class="chef-card-back">
+              <h5>Signature Dish: Chocolate Hazelnut Torte</h5>
+              <p>Patisserie master; known for surprising desserts & gluten-free delights.</p>
+              <ul class="list-unstyled chef-details-list">
+                <li><strong>Specialty:</strong> Patisserie & Gluten-Free Baking</li>
+                <li><strong>Fun Fact:</strong> Sketches recipes in watercolor</li>
+                <li><strong>Award:</strong> Sweet Artistry Medal 2024</li>
+              </ul>
+              <a href="#exploreMenu" class="btn btn-outline-dark btn-sm mt-2">Ask Chef Alisha</a>
+              <div class="chef-socials mt-3">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Rotating Chef Quotes/Testimonials -->
+    <div class="chef-quotes-slider mt-5 text-center">
+      <blockquote class="active">“Every dish deserves a memory.” – Chef Anika</blockquote>
+      <blockquote>“Food is the world’s tastiest conversation.” – Chef Rajesh</blockquote>
+      <blockquote>“A dessert made with love is a treat for your soul.” – Chef Alisha</blockquote>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<section id="food-story-gallery" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-3">Food Story Gallery</h2>
+    <p class="lead text-center text-muted mb-4">
+      Share your meal moment, join our community gallery & see your story featured here!
+    </p>
+    <!-- Story Rings -->
+    <div class="story-rings d-flex justify-content-center my-4 gap-3 flex-wrap">
+      <div class="story-ring">
+        <img src="user1.jpg" alt="Top Foodie" class="story-avatar" title="Top Story Today" />
+      </div>
+      <div class="story-ring">
+        <img src="user2.jpg" alt="Dish Highlight" class="story-avatar" title="Chef's Pick" />
+      </div>
+      <div class="story-ring">
+        <img src="user3.jpg" alt="Food Lover" class="story-avatar" title="Yummy!" />
+      </div>
+      <!-- Add more rings as needed -->
+    </div>
+    <!-- Share Your Food Story Form -->
+    <div class="share-story-card shadow bg-light p-4 rounded mx-auto mb-5" style="max-width:480px;">
+      <form id="foodStoryForm">
+        <div class="mb-3">
+          <label class="form-label fw-semibold">Photo</label>
+          <input type="file" class="form-control" accept="image/*" id="storyImage" required>
+          <div id="imagePreview" class="mt-2"></div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label fw-semibold">How was your meal?</label>
+          <input type="text" class="form-control" id="storyCaption" maxlength="60" placeholder="Best lunch ever! 🌶️" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label fw-semibold d-block">Mood</label>
+          <div class="mood-emojis">
+            <button type="button" class="mood-btn">😊</button>
+            <button type="button" class="mood-btn">😍</button>
+            <button type="button" class="mood-btn">😋</button>
+            <button type="button" class="mood-btn">🤩</button>
+            <button type="button" class="mood-btn">🔥</button>
+          </div>
+          <input type="hidden" id="storyMood" required>
+        </div>
+        <button type="submit" class="btn btn-gradient w-100 fw-bold">
+          <i class="fas fa-paper-plane"></i> Share My Story
+        </button> 
+        <!-- Inside your JS card HTML, add this next to other elements -->
+<button class="delete-story-btn" title="Delete Story" aria-label="Delete">
+  <i class="fas fa-trash"></i>
+</button>
+
+      </form>
+    </div>
+    <!-- Animated Gallery Grid -->
+    <div id="storyMasonry" class="row g-4"></div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- Checkout / Order Summary Modal -->
+<div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+
+      <!-- Header -->
+      <div class="modal-header bg-light text-dark">
+        <h5 class="modal-title" id="checkoutModalLabel">🍽 Your Order Summary</h5>
+        <button type="button" class="close-btn text-dark" data-bs-dismiss="modal">×</button>
+      </div>
+
+      <!-- Body -->
+      <div class="modal-body">
+
+        <!-- Dynamic Items -->
+        <div id="checkout-items-body" class="mb-3"></div>
+
+        <!-- Totals -->
+        <div class="d-flex justify-content-end gap-4 align-items-center mt-3">
+          <div>
+            <div class="microcopy">Subtotal</div>
+            <div id="checkout-subtotal" class="fw-bold">₹0.00</div>
+          </div>
+          <div>
+            <div class="microcopy">Total (incl. taxes)</div>
+            <div id="checkout-total" class="fw-bold">₹0.00</div>
+          </div>
+        </div>
+        <hr>
+
+        <!-- Order Type -->
+        <h6 class="fw-bold mt-3">Order Type</h6>
+        <div class="mb-3">
+          <select id="order-type" class="form-control">
+            <option value="">-- Select --</option>
+            <option value="delivery">🚚 Delivery</option>
+            <option value="dinein">🍽️ Dine-In (Table Order)</option>
+          </select>
+        </div>
+
+        <!-- Table Number (Only for Dine-In) -->
+        <div class="mb-3" id="table-number-box" style="display:none;">
+          <label class="form-label">Table Number</label>
+          <input type="text" id="table-number" class="form-control" placeholder="Enter your table number">
+        </div>
+
+        <!-- Delivery Details (Hidden when Dine-In selected) -->
+        <div id="delivery-details">
+          <h6 class="fw-bold mt-3">Delivery Details</h6>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Full Name</label>
+              <input type="text" id="cust-name" class="form-control" placeholder="Enter your name">
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Phone Number</label>
+              <input type="tel" id="cust-phone" class="form-control" placeholder="9876543210">
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Delivery Address</label>
+              <textarea id="delivery-location" class="form-control" rows="2" placeholder="Enter your full address"></textarea>
+              <button id="detect-location" class="btn btn-sm btn-outline-primary mt-2">📍 Detect My Location</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment Method -->
+        <h6 class="fw-bold mt-4">Payment Method</h6>
+        <div class="d-flex gap-4">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="payment" id="pay-cod" value="COD" checked>
+            <label class="form-check-label" for="pay-cod">Cash on Delivery</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="payment" id="pay-upi" value="UPI">
+            <label class="form-check-label" for="pay-upi">UPI / Online</label>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-action="clear-cart">Clear Cart</button>
+        <button type="button" class="btn btn-primary" data-action="checkout">Place Order</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Delivery & Payment Section -->
+<div id="deliveryPaymentSection" class="delivery-and-payment-section pt-5 pb-5" style="background-color:#f8f9fa;">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Side: Text & Button -->
+      <div class="col-12 col-md-7 order-2 order-md-1">
+        <h1>Delivery and Payment</h1>
+        <p>
+          Enjoy hassle-free payment with multiple options. Live tracking available. Get 5% discount every online order.
+        </p>
+        
+        <!-- Gradient Button with Smooth Scroll -->
+        <a href="#exploreMenu" class="btn btn-gradient btn-lg shadow-sm mb-2">
+          Order Now 
+        </a>
+        
+        <!-- Trust Badges -->
+        <div class="d-flex flex-wrap align-items-center gap-3 mb-3">
+          <span class="badge p-2" style="color: black;">100% Fresh</span>
+          <span class="badge p-2" style="color: black;">On-Time Delivery</span>
+          <span class="badge p-2" style="color: black;">Secure Payment</span>
+        </div>
+
+        <!-- Payment Cards -->
+        <div class="mt-3">
+          <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/visa-card-img.png" class="payment-card-img" />
+          <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/master-card-img.png" class="payment-card-img" />
+          <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/paypal-card-img.png" class="payment-card-img" />
+          <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/american-express-img.png" class="payment-card-img" />
+        </div>
+      </div>
+
+      <!-- Right Side: Image -->
+      <div class="col-12 col-md-5 order-1 order-md-2 text-center">
+        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/delivery-payment-section-img.png" class="img-fluid rounded shadow" />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Thanking Customers Section -->
+ <div class="thanking-customers-section pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+            <h1 class="thanking-customers-section-heading">
+              Thank you for being a valuable customer to us.
+            </h1>
+            <p class="thanking-customers-section-description">
+              We have a surprise gift for you
+            </p>
+            <div class="d-md-none">
+              <img
+                src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png"
+                class="thanking-customers-section-img"
+              />
+            </div>
+            <div>
+              <button type="button" class="custom-button" data-toggle="modal" data-target="#exampleModal">
+                Redeem Gift
+              </button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog mt-5">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title thanking-customers-section-modal-title" id="exampleModalLabel" style="display: flex; align-items: center; gap: 10px;">
+          🎉 Gift Voucher
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+                    <div class="modal-body">
+                      <img
+                        src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/gift-voucher-img.png"
+                        class="w-100"
+                      />
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-5 d-none d-md-block">
+            <img
+              src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png"
+              class="thanking-customers-section-img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  <div class="follow-us-section pt-5 pb-5 position-relative" id="followUsSection">
+  <!-- Video Background: Replace 'your-bg-video.mp4' with your file or URL -->
+  <video class="follow-bg-video" autoplay muted loop playsinline>
+    <source src="ved.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <!-- Overlay for readability -->
+  <div class="follow-bg-overlay"></div>
+
+  <div class="container position-relative" style="z-index:3;">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-1">
+        <h1 class="follow-us-section-heading mb-3">Join Our Food Community!</h1>
+        <p class="lead text-muted">
+          Follow us for daily food stories, chef tips, and exclusive giveaways.
+        </p>
+      </div>
+      <!-- Floating Story Ring (avatars or food pics) -->
+      <div class="col-12 mb-3 d-flex justify-content-center align-items-center">
+        <div class="story-ring">
+          <img src="user1.jpg" class="story-avatar" alt="user1" />
+          <img src="user2.jpg" class="story-avatar" alt="chef" />
+          <img src="user3.jpg" class="story-avatar" alt="dish" />
+          <!-- add more as desired -->
+        </div>
+      </div>
+      <!-- Glass Social Grid -->
+      <div class="col-12 d-flex flex-row justify-content-center gap-4 flex-wrap">
+        <a href="#" class="glass-social-card insta" title="Instagram">
+          <i class="fab fa-instagram"></i>
+          <span>@foodmunch</span>
+        </a>
+        <a href="#" class="glass-social-card fb" title="Facebook">
+          <i class="fab fa-facebook"></i>
+          <span>/foodmunch</span>
+        </a>
+        <a href="#" class="glass-social-card twitter" title="Twitter">
+          <i class="fab fa-twitter"></i>
+          <span>@foodmunch</span>
+        </a>
+        <a href="#" class="glass-social-card yt" title="YouTube">
+          <i class="fab fa-youtube"></i>
+          <span>/foodmunch</span>
+        </a>
+      </div>
+      <div class="col-12 mt-4 text-center">
+        <a href="#food-story-gallery" class="btn btn-food-share">
+          <i class="fas fa-camera-retro"></i> Share Your Food Story
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer-section pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <img
+              src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/food-munch-logo-light.png"
+              class="food-munch-logo"
+            />
+            <h1 class="footer-section-mail-id">orderfood@foodmunch.com</h1>
+            <p class="footer-section-address">
+              123 Vijaynagar Nagar 2nd stage, Mysore, India.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous">
+  </script> 
+  <script src="script.js"></script>
+
+<!-- ✅ Order Success Popup -->
+<div id="order-success-popup">
+  <div class="popup-content">
+    🎉 Order Placed Successfully! 🎉<br>
+    Thank you for choosing us 😊
+  </div>
+</div> 
+
+
+<!-- Add this near the end of your body -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 2000">
+  <div id="cartToast" class="toast align-items-center bg-success text-white border-0" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body" id="cartToastBody"> 
+        <button id="goToCart" class="btn btn-primary">Go to Cart</button>
+
+        <!-- JS will fill content -->
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+<!-- ✅ Confetti Script -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
